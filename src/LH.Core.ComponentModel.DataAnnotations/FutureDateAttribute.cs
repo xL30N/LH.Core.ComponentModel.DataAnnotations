@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LH.Core.ComponentModel.DataAnnotations
 {
-    [AttributeUsage(AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
     public class FutureDateAttribute : BaseValidationAttribute, IClientModelValidator
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
